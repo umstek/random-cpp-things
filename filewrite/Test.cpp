@@ -15,6 +15,8 @@ public:
 
 Test::Test(/* args */)
 {
+    // ofs.open("../a/test.txt", std::ios::app);
+    // ofs1.open("../a/test1.txt", std::ios::app);
     ofs.open("test.txt", std::ios::app);
     ofs1.open("test1.txt", std::ios::app);
     // Fix decimal places instead of precision
@@ -46,8 +48,6 @@ int main(int argc, char const *argv[])
     Test *a = new Test();
     a->write("hello, world!");
     a->write("");
-
-    exit(-1); // Premature termination
 
     delete a;
 
